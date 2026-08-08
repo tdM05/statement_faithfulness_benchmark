@@ -1,0 +1,4 @@
+{
+  "gt_label": "sort_of",
+  "reason": "The formal statements are identical between original and corrected. The only difference is in the informal comment: the original says 'let $E$ be a dense subset' but then refers to '$p \\in P$' — inconsistent variable naming (E vs P). The corrected NL fixes this to 'let $P$ be a dense subset', making the variable consistent. Since the original NL is ambiguous/inconsistent, faithfulness is incomparable."
+}

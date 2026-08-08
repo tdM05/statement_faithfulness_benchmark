@@ -1,0 +1,16 @@
+# Lean build artifacts — regenerate per dataset with `lake exe cache get`
+# (each dataset dir has its own .lake, e.g. proofnet_verified/.lake)
+.lake/
+build/
+*.olean
+*.olean.trace
+*.ilean
+*.c
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+*.swp

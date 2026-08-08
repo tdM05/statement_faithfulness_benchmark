@@ -1,0 +1,4 @@
+{
+  "gt_label": "unfaithful",
+  "reason": "The original uses `sin (pi/12)` with `open Real`, but `Real.pi` is `protected`, so `open Real` does NOT bring `pi` into scope. Lean's auto-bound implicit system treats `pi` as a free variable, making the actual elaborated type `∀ {pi : ℝ}, IsAlgebraic ℚ (sin (pi / 12))` — i.e., sin(x/12) is algebraic for ALL real x. This is false (e.g., sin(1/12) is transcendental). The corrected version uses `Real.pi` explicitly, giving the correct statement `IsAlgebraic ℚ (sin (π / 12))`. The original is strictly stronger (universally quantified) and unprovable."
+}
